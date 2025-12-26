@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Main Card */
+.container {
+    background: #1e1e2f;
+    width: 90%;
+    max-width: 650px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* User Input Section */
+.user-container {
+    margin-bottom: 1.5rem;
+}
+
+.user-container p {
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.user-input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+#search-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #4ade80;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#search-btn:hover {
+    background: #22c55e;
+}
+
+
+.progress {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #22c55e var(--progress-degree, 0%),
+        #2a2a40 0%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #1e1e2f;
+    border-radius: 50%;
+}
+
+.circle span {
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.circle p {
+    position: relative;
+    z-index: 1;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+
+.stats-cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: linear-gradient(135deg, #f97316, #fb923c);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
